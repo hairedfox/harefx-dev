@@ -50,7 +50,8 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: utf8mb4
   database: harefx_dev_production
   username: harefx_dev
   password: <%= ENV['HAREFX_DEV_DATABASE_PASSWORD'] %>
