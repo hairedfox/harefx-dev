@@ -1,17 +1,34 @@
 @import 'variables';
 
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+}
+
 .homepage-background {
   background-color: #1a2531;
-  height: 100vh;
+  min-height: 800px;
+  height: 100%;
 }
 
 .has-text-orbitron {
   font-family: 'Orbitron';
 }
 
+.has-position-absolute {
+  position: absolute;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .glitch-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   font-size: 10px;
