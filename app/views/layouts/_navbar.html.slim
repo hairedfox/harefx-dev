@@ -1,12 +1,13 @@
-nav.navbar.is-dark
-  .navbar-brand
-    = link_to "HAREFX", root_path, class: "navbar-item"
-    .navbar-burger data-target="harefx-nav"
-      span
-      span
-      span
-  #harefx-nav.navbar-menu
-    .navbar-start.has-text-weight-bold
-      = link_to "Home", root_path, class: "navbar-item"
-      = link_to "Projects", "#", class: "navbar-item"
-      = link_to "Contributing Projects", "#", class: "navbar-item"
+section.hero.is-dark
+  .hero-head
+    nav.navbar.is-dark
+      .navbar-brand
+        = link_to "HAREFX", root_path, class: "navbar-item has-text-primary has-text-orbitron has-text-weight-bold"
+        .navbar-burger data-target="harefx-nav"
+          span
+          span
+          span
+      #harefx-nav.navbar-menu
+        .navbar-end.has-text-weight-bold
+          = link_to "Projects", "#", class: "navbar-item"
+          = link_to "Contributing Projects", "#", class: "navbar-item"
