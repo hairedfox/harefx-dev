@@ -35,9 +35,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'bullet'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rubocop-rails', require: false
-  gem 'rspec-rails'
   gem 'faker'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -56,8 +58,8 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
   gem 'database_cleaner-active_record'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
