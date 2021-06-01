@@ -1,5 +1,6 @@
 set :application, "harefx-dev"
 set :repo_url, "git@github.com:hairedfox/harefx-dev.git"
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # Deploy to the user's home directory
 set :deploy_to, "/var/www/#{fetch :application}"
