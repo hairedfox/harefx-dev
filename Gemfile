@@ -71,6 +71,10 @@ group :test do
   gem 'webdrivers'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bulma-rails', '~> 0.9.1'
 gem 'slim-rails'
