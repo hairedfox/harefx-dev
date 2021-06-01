@@ -51,7 +51,7 @@ test:
 #
 production:
   adapter: postgresql
-  encoding: utf8mb4
+  encoding: utf8
   url: <%= ENV['DATABASE_URL'] %>
   database: harefx_dev_production
   username: harefx
