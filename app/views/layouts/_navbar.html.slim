@@ -3,11 +3,14 @@ section.hero.is-dark.has-text-orbitron
     nav.navbar.is-dark
       .navbar-brand
         = link_to "HAREFX", root_path, class: "navbar-item has-text-primary has-text-weight-bold"
-        .navbar-burger data-target="harefx-nav"
-          span
-          span
-          span
+        a.navbar-burger data-target="harefx-nav" role="button" aria-label="menu" aria-expanded="false"
+          span aria-hidden="true"
+          span aria-hidden="true"
+          span aria-hidden="true"
       #harefx-nav.navbar-menu
         .navbar-end.has-text-weight-bold
           = link_to "Projects", "#", class: "navbar-item"
+          = link_to "Case Study", "#", class: "navbar-item"
           = link_to "Contributing Projects", "#", class: "navbar-item"
+          = link_to "Product Reviews", "#", class: "navbar-item"
+          = link_to "About Me", "#", class: "navbar-item"
