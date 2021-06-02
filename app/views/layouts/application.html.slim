@@ -12,7 +12,9 @@ html
   body
     #particles-js.homepage-background
       = render "layouts/navbar"
-      p.notice = notice
-      p.alert = alert
+      - if notice.present?
+        div.notification.is-primary = notice
+      - if alert.present?
+        div.notification.is-danger = alert
       = yield
       = render "layouts/footer"
