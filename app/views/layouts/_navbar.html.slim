@@ -14,3 +14,7 @@ section.hero.is-dark.has-text-orbitron
           = link_to "Contributing Projects", "#", class: "navbar-item"
           = link_to "Product Reviews", "#", class: "navbar-item"
           = link_to "About Me", "#", class: "navbar-item"
+          - if user_signed_in?
+            = link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-item"
+          - else
+            = link_to "Login", new_user_session_path, class: "navbar-item"
