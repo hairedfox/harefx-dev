@@ -54,5 +54,6 @@ production:
   encoding: utf8
   url: <%= ENV['DATABASE_URL'] %>
   database: harefx_dev_production
+  port: 5432
   username: harefx
   password: <%= ENV['HAREFX_DEV_DATABASE_PASSWORD'] %>
